@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+    - name: kubernets-app
+      image: kubernets-app:latest
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 80
